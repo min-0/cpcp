@@ -5,16 +5,13 @@ int main()
 	double n[5];
 	double max = 0;
 
-	std::cout << "5 °³ÀÇ ½Ç¼ö¸¦ ÀÔ·ÂÇÏ¶ó>>";
+	std::cout << "5 ê°œì˜ ì‹¤ìˆ˜ë¥¼ ìž…ë ¥í•˜ë¼>>";
 
 	for (int i = 0; i < 5; i++)
 	{
 		std::cin >> n[i];
-
-		if (max < n[i])
-		{
-			max = n[i];
-		}
+		if (max < n[i]){
+			max = n[i];}
 	}
-	std::cout << "Á¦ÀÏ Å« ¼ö = " << max <<"\n";
+	std::cout << "ì œì¼ í° ìˆ˜ = " << max <<"\n";
 }
