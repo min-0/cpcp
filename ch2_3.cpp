@@ -4,7 +4,7 @@ int main()
 {
 	int n1, n2 = 0;
 
-	std::cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¶ó ";
+	std::cout << "ë‘ ìˆ˜ë¥¼ ì…ë ¥>> ";
 	std::cin >> n1;
 	std::cin >> n2;
 
@@ -13,5 +13,5 @@ int main()
 	else if (n1 > n2)
 		std::cout << n1 << "\n";
 	else
-		std::cout << "µÎ ¼öÀÇ Å©±â°¡ °°½À´Ï´Ù\n";
+		std::cout << "ë‘ ìˆ˜ì˜ í¬ê¸°ê°€ ê°™ìŠµë‹ˆë‹¤\n";
 }
