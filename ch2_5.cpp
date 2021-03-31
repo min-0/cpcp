@@ -2,18 +2,16 @@
 
 int main()
 {
-	std::cout << "¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¶ó(100°³ ¹Ì¸¸)\n";
+	std::cout << "ë¬¸ìì—´ì„ ì…ë ¥í•˜ë¼(100ê°œ ë¯¸ë§Œ)\n";
 
 	int cnt = 0;
 	char s[100];
 
 	std::cin.getline(s, 100, '\n');
 
-	for (int i = 0; i < 100; i++)
-	{
+	for (int i = 0; i < 100; i++){
 		if (s[i] == 'x')
-			cnt++;
-	}
+			cnt++;}
 
-	std::cout << "xÀÇ °³¼ö´Â " << cnt << "\n";
+	std::cout << "xì˜ ê°œìˆ˜ëŠ” " << cnt << "\n";
 }
