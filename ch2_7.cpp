@@ -4,18 +4,16 @@
 int main()
 {
 	char yesman[10];
-	std::cout << "Á¾·áÇÏ°í ½ÍÀ¸¸é yes¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä>>";
+	std::cout << "ì¢…ë£Œí•˜ê³  ì‹¶ìœ¼ë©´ yesë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”>>";
 
 	while (true)
 	{
 		std::cin >> yesman;
 
-		if (strcmp(yesman, "yes") == 0)
-		{
-			std::cout << "Á¾·áÇÕ´Ï´Ù..."<<"\n";
-			break;
-		}
+		if (strcmp(yesman, "yes") == 0){
+			std::cout << "ì¢…ë£Œí•©ë‹ˆë‹¤..."<<"\n";
+			break;}
 		else
-			std::cout << "Á¾·áÇÏ°í ½ÍÀ¸¸é yes¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä>>";
+			std::cout << "ì¢…ë£Œí•˜ê³  ì‹¶ìœ¼ë©´ yesë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”>>";
 	}
 }
