@@ -5,22 +5,20 @@ int main()
 {
 	char password[10];
 	char checkpw[10];
-	std::cout << "»õ ¾ÏÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä>>";
+	std::cout << "ìƒˆ ì•”í˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”>>";
 
 	std::cin >> password;
 
-	std::cout << "»õ ¾ÏÈ£¸¦ ´Ù½Ã ÇÑ ¹ø ÀÔ·ÂÇÏ¼¼¿ä>>";
+	std::cout << "ìƒˆ ì•”í˜¸ë¥¼ ë‹¤ì‹œ í•œ ë²ˆ ìž…ë ¥í•˜ì„¸ìš”>>";
 
 	while (true)
 	{
 		std::cin >> checkpw;
 
-		if (strcmp(password, checkpw) == 0)
-		{
-			std::cout << "°°½À´Ï´Ù" << "\n";
-			break;
-		}
+		if (strcmp(password, checkpw) == 0){
+			std::cout << "ê°™ìŠµë‹ˆë‹¤" << "\n";
+			break;}
 		else
-			std::cout << "´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä>>";
+			std::cout << "ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”>>";
 	}
 }
