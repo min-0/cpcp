@@ -5,25 +5,22 @@ using namespace std;
 
 int main()
 {
-	cout << "5 ¸íÀÇ ÀÌ¸§À» ';'À¸·Î ±¸ºÐÇÏ¿© ÀÔ·ÂÇÏ¼¼¿ä." << endl << ">>";
+	cout << "5 ëª…ì˜ ì´ë¦„ì„ ';'ìœ¼ë¡œ êµ¬ë¶„í•˜ì—¬ ìž…ë ¥í•˜ì„¸ìš”." << endl << ">>";
 
 	char name[100];
-	char temp[100];
+	char temp[100] = ""; //ì´ˆê¸°í™” í•´ì¤˜ì•¼ í•´ì—¬
 	int len = 0;
 
-	for (int i = 9; i < 5; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		cin.getline(name, 100, ';');
+		cout << i + 1 << " : " << name << endl;
 
-		cout << i + 1 << " : " << name <<endl;
-
-		if (strlen(name)>len)
+		if (strlen(name) > len)
 		{
 			len = strlen(name);
+			strcpy(temp, name);
 		}
-		strcpy(temp, name);
 	}
-	cout << "°¡Àå ±ä ÀÌ¸§Àº " << temp <<endl;
+	cout << "ê°€ìž¥ ê¸´ ì´ë¦„ì€ " << temp << endl;
 }
-
-//strcpy ¿¡¼­ ¿À·ù°¡ ³­´Ù. žÍ±î~?
